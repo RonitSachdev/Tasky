@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* Helvetica Font Stack */
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Clean, minimal aesthetic */
+.helvetica-ui {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.helvetica-ui-light {
+  font-weight: 300;
+  letter-spacing: -0.005em;
+}
+
+.helvetica-ui-medium {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.helvetica-ui-bold {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Custom components for Helvetica UI */
+.task-card {
+  @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-3 relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.task-card:hover {
+  @apply shadow-md border-gray-300;
+  transform: translateY(-1px);
+}
+
+.task-card.dragging {
+  @apply shadow-lg border-blue-300;
+  transform: rotate(2deg);
+}
+
+.status-column {
+  @apply bg-gray-50 rounded-xl p-4 min-h-[200px];
+  border: 1px solid #f0f0f0;
+}
+
+.status-column.drag-over {
+  @apply bg-blue-50 border-blue-200;
+}
+
+.helvetica-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  letter-spacing: -0.01em;
+}
+
+.helvetica-button-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.helvetica-button-secondary {
+  @apply bg-gray-100 text-gray-700 hover:bg-gray-200 active:bg-gray-300;
+}
