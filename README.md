@@ -2,7 +2,14 @@
 
 A modern, full-stack project management application built with Rails API backend and Next.js frontend. Features organization-based user management, Kanban-style task boards, and real-time collaboration.
 
-## 🚀 Features
+![Ruby](https://img.shields.io/badge/ruby-3.4.4-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+![Rails](https://img.shields.io/badge/rails-8.0.0-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next.js-15.3.4-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-5.0-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-4.0-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-13+-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+
+## Features
 
 ### Core Functionality
 - **Project Management**: Create, organize, and track projects
@@ -23,7 +30,18 @@ A modern, full-stack project management application built with Rails API backend
 - **Drag & Drop**: Intuitive Kanban board with visual feedback
 - **Modern Components**: Tailwind CSS with custom design system
 
-## 🛠 Tech Stack
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Dashboard
+![Dashboard](dashboard.png)
+
+### Kanban Board
+![Kanban Board](board.png)
+
+## Tech Stack
 
 ### Backend
 - **Ruby on Rails 8.0** - API-only application
@@ -40,7 +58,7 @@ A modern, full-stack project management application built with Rails API backend
 - **Axios** - HTTP client
 - **Lucide React** - Icon library
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Node.js** (v18 or higher)
 - **Ruby** (v3.2 or higher)
@@ -48,7 +66,7 @@ A modern, full-stack project management application built with Rails API backend
 - **PostgreSQL** (v13 or higher)
 - **Git**
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -87,7 +105,7 @@ npm run dev
 
 The frontend will be available at `http://localhost:3000`
 
-## 🗄 Database Setup
+## Database Setup
 
 The application uses PostgreSQL. Make sure you have it installed and running.
 
@@ -116,7 +134,7 @@ The seed file creates sample data including:
 - 6 Projects with tasks
 - 4 Users without organizations (for testing admin functionality)
 
-## 👥 Test Accounts
+## Test Accounts
 
 ### Admin Accounts
 ```
@@ -159,7 +177,7 @@ Email: newuser@example.com
 Password: password123
 ```
 
-## 🔧 API Documentation
+## API Documentation
 
 ### Authentication Endpoints
 
@@ -204,7 +222,7 @@ PUT /api/v1/tasks/:id                      - Update task
 DELETE /api/v1/tasks/:id                   - Delete task
 ```
 
-## 🎯 User Workflows
+## User Workflows
 
 ### New User Onboarding
 
@@ -227,7 +245,7 @@ DELETE /api/v1/tasks/:id                   - Delete task
 3. **Kanban Board**: Drag tasks between columns (To Do, In Progress, Completed, Cancelled)
 4. **Task Details**: Click tasks to view/edit full details
 
-## 🔒 Security Features
+## Security Features
 
 - **JWT Authentication**: Secure token-based authentication
 - **Role-based Access**: Different permissions for Admin/Employee/Trainee
@@ -236,7 +254,7 @@ DELETE /api/v1/tasks/:id                   - Delete task
 - **Input Validation**: Server-side validation for all inputs
 - **CORS Protection**: Configured for secure cross-origin requests
 
-## 🎨 Design System
+## Design System
 
 ### Helvetica UI
 - **Typography**: Helvetica Neue font family
@@ -257,14 +275,14 @@ DELETE /api/v1/tasks/:id                   - Delete task
 - **High**: Orange
 - **Urgent**: Red
 
-## 📱 Responsive Design
+## Responsive Design
 
 The application is fully responsive and works on:
 - **Desktop**: Full feature set with optimal layout
 - **Tablet**: Responsive grid layouts and touch-friendly interactions
 - **Mobile**: Optimized for mobile usage with collapsible navigation
 
-## 🧪 Testing
+## Testing
 
 ### Manual Testing Scenarios
 
@@ -285,7 +303,7 @@ The application is fully responsive and works on:
    - Assign tasks to team members
    - Edit task details via modal
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -293,13 +311,12 @@ The application is fully responsive and works on:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 🐛 Known Issues
+## Known Issues
 
 - None currently reported
 
-## 📞 Support
+## Support
 
 For support, please open an issue on GitHub or contact [ronitsachdev007@gmail.com].
 ---
-
 **Built with ❤️ using Rails and Next.js** 
